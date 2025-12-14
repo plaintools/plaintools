@@ -25,18 +25,16 @@
       margin-bottom: 1rem;
     }
 
-    h2 {
-      margin-top: 3rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.25rem;
-    }
-
     p {
       margin: 1rem 0;
     }
 
     ul {
       margin: 1rem 0 1rem 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
     }
 
     strong {
@@ -46,19 +44,25 @@
     hr {
       border: none;
       border-top: 1px solid #ddd;
-      margin: 3rem 0;
+      margin: 2rem 0;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 64 64"
-      aria-hidden="true"
-      style="display:block; margin-bottom: 1rem;"
-    >
+
+  <svg
+    width="48"
+    height="48"
+    viewBox="0 0 64 64"
+    aria-hidden="true"
+    style="display:block; margin-bottom: 1rem;"
+  >
     <rect
       x="12"
       y="12"
@@ -75,8 +79,8 @@
   <p>
     I like using open source software tools to automate the tedious parts of daily work.
     Increasingly, however, I find that modern tools come with complicated build processes
-    or large dependency trees. I've spent hundreds of hours just trying set up a
-    machine to <em>run</em> them.
+    or large dependency trees. I’ve spent a surprising amount of time just trying to set
+    up a machine to <em>run</em> them.
   </p>
 
   <p>
@@ -96,24 +100,67 @@
   </ul>
 
   <p>
-    The emphasis is on buildilng tools that can be easily run and understood,
-    and handed over without elaborate infrastructure or specialist knowledge.
+    The emphasis is on building tools that can be easily run and understood, and handed
+    over without elaborate infrastructure or specialist knowledge.
   </p>
-  
+
+  <h2>Inspirations</h2>
+
+  <p>
+    The ideas on this site are influenced by work that emphasizes simplicity,
+    restraint, and building software that remains understandable and useful
+    over time.
+  </p>
+
+  <ul>
+    <li>
+      <strong><a href="https://www.hwaci.com/drh/" rel="external">D. Richard Hipp</a></strong> —
+      through <a href="https://sqlite.org/" rel="external">SQLite</a>, which demonstrates how
+      careful design, minimal dependencies, and a strong commitment to simplicity can
+      produce software that is open source, widely deployed, and long-lived.
+    </li>
+
+    <li>
+      <strong><a href="https://horstmann.com/" rel="external">Cay Horstmann</a></strong> —
+      in particular his talks on
+      <a href="https://horstmann.com/presentations/2024/smalljava" rel="external">Small Java</a>
+      and
+      <a href="https://horstmann.com/presentations/2025/javaone/" rel="external">Java for Small Coding Tasks</a>,
+      which argue for using a general-purpose language and its standard tools directly,
+      without heavy frameworks, to build small programs.
+    </li>
+
+    <li>
+      <strong><a href="https://simonwillison.net/" rel="external">Simon Willison</a></strong> —
+      particularly his writing and examples of build-free, single-file
+      <a href="https://tools.simonwillison.net/" rel="external">tools</a>, including both
+      <a href="https://simonwillison.net/2025/Dec/10/html-tools/" rel="external">plain HTML utilities</a>
+      and self-contained,
+      <a href="https://tools.simonwillison.net/python/" rel="external"><code>uv</code>-based Python scripts</a>
+      designed to be easy to copy, run, and inspect.
+    </li>
+
+    <li>
+      <strong><a href="https://pragdave.me/" rel="external">Dave Thomas (“Prag Dave”)</a></strong> —
+      especially his work on
+      <a href="https://www.youtube.com/watch?v=qbtbh7dIUgo" rel="external">simplicity</a>,
+      judgment, and avoiding accidental complexity in software development.
+    </li>
+  </ul>
+
   <hr>
-  
+
   <footer>
     <p>
       <small>
-        Plain Tools is a learning project, documented in public. Content and examples will evolve over time.
-      </small>
-    </p>
-    <p>
-      <small>
-        Source: <a href="https://github.com/plaintools/plaintools/blob/main/index.html">index.html</a>
-        Contact: <a href="mailto:contact@plaintools.org">contact@plaintools.org</a>
+        Plain Tools is a learning project, documented in public.
+        Content and examples will evolve over time.<br>
+        <a href="https://github.com/plaintools/plaintools/blob/main/index.html">View source</a>
+        ·
+        <a href="mailto:contact@plaintools.org">Contact</a>
       </small>
     </p>
   </footer>
+
 </body>
 </html>
